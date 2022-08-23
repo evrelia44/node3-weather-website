@@ -2,7 +2,7 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 
 const getWeather = async (address) => {
-    const response = await fetch(`http://localhost:3000/weather?address=${address}`)
+    const response = await fetch(`/weather?address=${address}`)
         if (response.status === 200){
            const data = await response.json()
            if (!data.error){

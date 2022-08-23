@@ -7,6 +7,7 @@ import geoCode from './utils/geocode.js'
 import forecast from './utils/forecast.js'
 
 const app = express()
+const port = process.env.PORT || 3000
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 //Setup handlebars location and views folder
@@ -94,6 +95,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server Started')
 })
