@@ -11,4 +11,6 @@ const forecast = (latitude, longitude, callback) => {
     })
 }
 
+console.log('test')
+
 export default forecast
